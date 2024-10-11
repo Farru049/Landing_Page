@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farhaan Ali - Professional Landing Page</title>
+    <link rel="stylesheet" href="landing.css">
+    <!-- Google Fonts (Optional) -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons (Optional) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2Dk2s3G0p9E5oT4KJmFf5PSrV1aR+zH9XoD6V0I0QxR8KwbvYxg4FtmNzQ6ggrVdA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Add Smooth Scroll -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Logo">
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container hero-container">
+            <img src="undraw_mello_otq1.svg" alt="Footwear Image" class="hero-image">
+            <div class="hero-content">
+                <h1>Experience the Future of Footwear</h1>
+                <p>Discover our latest collection that blends style with performance.</p>
+                <a href="#products" class="btn">Shop Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>
+                We are dedicated to providing the best footwear experience. Our mission is to combine style, comfort, and technology in every product we offer. Join us on our journey to redefine the footwear industry.
+            </p>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2>Our Products</h2>
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <img src="p2.webp" alt="Product 1">
+                    <h3>UltraBoost 21</h3>
+                    <p>Experience unmatched comfort and energy return with our latest UltraBoost series.</p>
+                    <a href="#" class="btn">Buy Now</a>
+                </div>
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <img src="p1.webp" alt="Product 2">
+                    <h3>Adicolor Classics</h3>
+                    <p>Classic designs that never go out of style. Perfect for everyday wear.</p>
+                    <a href="#" class="btn">Buy Now</a>
+                </div>
+                <!-- Add more products as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial">
+                    <p>"These shoes have changed the way I run. Comfortable and stylish!"</p>
+                    <h4>- Alex P.</h4>
+                </div>
+                <div class="testimonial">
+                    <p>"Excellent quality and great customer service. Highly recommend!"</p>
+                    <h4>- Jamie L.</h4>
+                </div>
+                <!-- Add more testimonials as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Farhaan Ali. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://github.com/Farru049" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/farhaan-ali-753581241/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://ali-1234.netlify.app/" target="_blank"><i class="fas fa-globe"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>

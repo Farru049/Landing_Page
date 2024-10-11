@@ -1,0 +1,296 @@
+/* landing.css */
+
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #000000;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between logo and nav */
+    align-items: center; /* Center vertically */
+}
+
+/* Header */
+.header {
+    background: #7aa1c4;
+    color: #883737;
+    padding: 10px 0;
+}
+
+.logo img {
+    width: 100px; /* Adjust as needed */
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Use flexbox for nav items */
+}
+
+.nav ul li {
+    margin-left: 20px; /* Space between nav items */
+}
+
+.nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav ul li a:hover {
+    color: #229337; /* Change color on hover */
+}
+
+/* Hero Section */
+.hero {
+    background-color: #f4f4f4; /* Background color */
+    height: 100vh; /* Full viewport height */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    color: black; /* Change text color to black */
+}
+
+.hero-container {
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between image and content */
+    width: 100%; /* Full width */
+    padding: 0 20px; /* Add horizontal padding */
+}
+
+.hero-image {
+    max-width: 50%; /* Adjust image width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.hero-content {
+    flex: 1; /* Allow content to take remaining space */
+    margin-left: 20px; /* Add space between image and text */
+}
+
+.hero-content h1 {
+    font-size: 3em; /* Large heading size */
+    margin: 0; /* Remove default margin */
+}
+
+.hero-content p {
+    font-size: 1.5em; /* Size of the paragraph */
+    margin: 20px 0; /* Margin above and below paragraph */
+}
+
+.btn {
+    background-color: #007bff; /* Button color */
+    color: white; /* Button text color */
+    padding: 10px 20px; /* Button padding */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Ensure it fits content */
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* General Styles for Section Titles */
+h2 {
+    text-align: center; /* Center the title */
+    font-size: 2.5em; /* Ensure a larger font size */
+    margin-bottom: 20px; /* Add some spacing below the title */
+}
+
+/* About Section */
+.about {
+    padding: 60px 20px; /* Added horizontal padding for smaller screens */
+    background: #f4f4f4;
+    text-align: center; /* Center text */
+}
+
+.about h2 {
+    margin-bottom: 30px; /* Larger spacing below the title */
+}
+
+.about p {
+    max-width: 800px; /* Limit paragraph width for readability */
+    margin: 0 auto 20px; /* Center the paragraph and add bottom margin */
+    font-size: 1.2em; /* Adjust paragraph font size */
+}
+
+/* Products Section */
+.products {
+    padding: 60px 0;
+}
+
+.products h2 {
+    margin-bottom: 30px; /* Space below the title */
+    text-align: center; /* Center the title */
+}
+
+.product-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    flex: 0 0 30%; /* Responsive flex basis */
+    text-align: center;
+    padding: 20px;
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.product-card h3 {
+    margin: 10px 0;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 60px 0;
+    background: #e4e4e4;
+}
+
+.testimonial-slider {
+    text-align: center;
+}
+
+/* Contact Section */
+.contact {
+    padding: 60px 20px; /* Added horizontal padding for smaller screens */
+    background: linear-gradient(135deg, #ffffff, #f9f9f9); /* Gradient background for depth */
+    text-align: center; /* Center text */
+    border-radius: 10px; /* Rounded corners for the section */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for elevation */
+}
+
+.contact h2 {
+    margin-bottom: 30px; /* Space below the title */
+    font-size: 2.5em; /* Larger heading size */
+    color: #333; /* Darker text color for contrast */
+    text-transform: uppercase; /* Uppercase for emphasis */
+    letter-spacing: 1px; /* Spacing between letters */
+}
+
+.contact form {
+    max-width: 600px; /* Limit form width for better layout */
+    margin: 0 auto; /* Center the form */
+    display: flex;
+    flex-direction: column; /* Stack form elements */
+    background: #cfe3f7; /* White background for the form */
+    border-radius: 10px; /* Rounded corners for the form */
+    padding: 70px; /* Inner padding for the form */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Light shadow for the form */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    margin-bottom: 5px; /* Space between label and input */
+    font-weight: bold; /* Bold labels */
+    color: #555; /* Darker label color */
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%; /* Full width inputs */
+    padding: 10px; /* Add padding */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    transition: border-color 0.3s ease; /* Transition for border color */
+}
+
+/* Input Focus Effect */
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #000000; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Submit Button */
+.btn-submit {
+    background-color: #007bff; /* Button color */
+    color: white; /* Button text color */
+    padding: 10px 20px; /* Button padding */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Ensure it fits content */
+    font-size: 1.1em; /* Increase button font size */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transition for background and scale */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.btn-submit:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+/* Responsive Styles for Form Elements */
+@media (max-width: 768px) {
+    .contact h2 {
+        font-size: 2em; /* Adjust heading size for smaller screens */
+    }
+
+    .contact form {
+        padding: 20px; /* Reduce padding for smaller screens */
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 8px; /* Adjust padding for inputs */
+    }
+
+    .btn-submit {
+        background-color: #ffffff;
+        padding: 8px 16px; /* Adjust button padding */
+    }
+}
+
+/* Submit Button Styling */
+button[type="submit"] {
+    background-color: #007bff; /* Green background color */
+    color: white; /* White text */
+    padding: 10px ; /* Adjust padding */
+    font-size: 1.1em; /* Increase font size */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+button[type="submit"]:hover {
+    background-color: #28718c; /* Darker green on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+button[type="submit"]:active {
+    background-color: #1e537e; /* Even darker green when clicked */
+    transform: translateY(0); /* Reset lift on click */
+    outline: none; /* Remove default outline */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 2em; /* Adjust title font size for smaller screens */
+        margin-bottom: 20px; /* Slightly reduce the space on smaller screens */
+    }
+}
